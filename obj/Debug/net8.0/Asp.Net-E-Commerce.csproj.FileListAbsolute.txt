@@ -112,3 +112,4 @@
 /Users/anil/Documents/Development/Dotnet/Asp.Net-E-Commerce/Asp.Net-E-Commerce/obj/Debug/net8.0/Asp.Net-E-Commerce.pdb
 /Users/anil/Documents/Development/Dotnet/Asp.Net-E-Commerce/Asp.Net-E-Commerce/obj/Debug/net8.0/Asp.Net-E-Commerce.genruntimeconfig.cache
 /Users/anil/Documents/Development/Dotnet/Asp.Net-E-Commerce/Asp.Net-E-Commerce/obj/Debug/net8.0/ref/Asp.Net-E-Commerce.dll
+/Users/anil/Documents/Development/Dotnet/Asp.Net-E-Commerce/Asp.Net-E-Commerce/obj/Debug/net8.0/Asp.Net-E-Commerce.sourcelink.json

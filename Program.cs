@@ -1,5 +1,8 @@
 using System.Text;
 using Asp.Net_E_Commerce.Core.DbContext;
+using Asp.Net_E_Commerce.Core.Entities;
+using Asp.Net_E_Commerce.Core.Interfaces;
+using Asp.Net_E_Commerce.Core.Services;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
@@ -18,7 +21,7 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 });
 
 builder.Services
-    .AddIdentity<IdentityUser, IdentityRole>()
+    .AddIdentity<ApplicationUser, IdentityRole>()
     .AddEntityFrameworkStores<ApplicationDbContext>()
     .AddDefaultTokenProviders();
 
@@ -52,6 +55,8 @@ builder.Services
             IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["JWT:Secret"]))
         };
     });
+
+builder.Services.AddScoped<IAuthService, AuthService>();
 
 var app = builder.Build();
 
