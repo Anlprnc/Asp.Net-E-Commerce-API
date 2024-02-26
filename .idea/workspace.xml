@@ -4,22 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e1e65685-67dc-4ddd-81c4-59bbc62d5762" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/DbContext/ApplicationDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Core/DbContext/ApplicationDbContext.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Migrations/ApplicationDbContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Migrations/ApplicationDbContextModelSnapshot.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net8.0/Asp.Net-E-Commerce.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net8.0/Asp.Net-E-Commerce.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net8.0/Asp.Net-E-Commerce.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net8.0/Asp.Net-E-Commerce.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0/Asp.Net-E-Commerce.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net8.0/Asp.Net-E-Commerce.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0/Asp.Net-E-Commerce.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net8.0/Asp.Net-E-Commerce.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0/Asp.Net-E-Commerce.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net8.0/Asp.Net-E-Commerce.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0/Asp.Net-E-Commerce.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net8.0/Asp.Net-E-Commerce.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0/Asp.Net-E-Commerce.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net8.0/Asp.Net-E-Commerce.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0/ref/Asp.Net-E-Commerce.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net8.0/ref/Asp.Net-E-Commerce.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0/refint/Asp.Net-E-Commerce.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net8.0/refint/Asp.Net-E-Commerce.dll" afterDir="false" />
-    </list>
+    <list default="true" id="e1e65685-67dc-4ddd-81c4-59bbc62d5762" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

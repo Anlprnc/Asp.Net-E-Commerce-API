@@ -12,8 +12,8 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace Asp.Net_E_Commerce.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20240226140717_seed")]
-    partial class seed
+    [Migration("20240226142514_init")]
+    partial class init
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -369,13 +369,13 @@ namespace Asp.Net_E_Commerce.Migrations
             modelBuilder.Entity("Asp.Net_E_Commerce.Core.Entities.Product", b =>
                 {
                     b.HasOne("Asp.Net_E_Commerce.Core.Entities.Brand", "Brand")
-                        .WithMany("Products")
+                        .WithMany()
                         .HasForeignKey("BrandId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.HasOne("Asp.Net_E_Commerce.Core.Entities.Category", "Category")
-                        .WithMany("Products")
+                        .WithMany()
                         .HasForeignKey("CategoryId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -434,16 +434,6 @@ namespace Asp.Net_E_Commerce.Migrations
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-                });
-
-            modelBuilder.Entity("Asp.Net_E_Commerce.Core.Entities.Brand", b =>
-                {
-                    b.Navigation("Products");
-                });
-
-            modelBuilder.Entity("Asp.Net_E_Commerce.Core.Entities.Category", b =>
-                {
-                    b.Navigation("Products");
                 });
 #pragma warning restore 612, 618
         }

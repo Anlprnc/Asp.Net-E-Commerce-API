@@ -13,7 +13,5 @@ namespace Asp.Net_E_Commerce.Core.Entities
         public string Slug { get; set; }
         public int Order { get; set; }
         public bool IsActive { get; set; }
-
-        public virtual ICollection<Product> Products { get; set; }
     }
 }
