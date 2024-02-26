@@ -3,6 +3,7 @@ using System;
 using Asp.Net_E_Commerce.Core.DbContext;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
@@ -11,9 +12,11 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace Asp.Net_E_Commerce.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20240226133154_init2")]
+    partial class init2
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -113,26 +116,6 @@ namespace Asp.Net_E_Commerce.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Brands");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = 1,
-                            BrandName = "Sony",
-                            IsActive = true
-                        },
-                        new
-                        {
-                            Id = 2,
-                            BrandName = "Nike",
-                            IsActive = true
-                        },
-                        new
-                        {
-                            Id = 3,
-                            BrandName = "Penguin Books",
-                            IsActive = true
-                        });
                 });
 
             modelBuilder.Entity("Asp.Net_E_Commerce.Core.Entities.Category", b =>
@@ -161,32 +144,6 @@ namespace Asp.Net_E_Commerce.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Categories");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = 1,
-                            CategoryName = "Electronics",
-                            IsActive = true,
-                            Order = 1,
-                            Slug = "electronics"
-                        },
-                        new
-                        {
-                            Id = 2,
-                            CategoryName = "Clothing",
-                            IsActive = true,
-                            Order = 2,
-                            Slug = "clothing"
-                        },
-                        new
-                        {
-                            Id = 3,
-                            CategoryName = "Books",
-                            IsActive = true,
-                            Order = 3,
-                            Slug = "books"
-                        });
                 });
 
             modelBuilder.Entity("Asp.Net_E_Commerce.Core.Entities.Product", b =>
