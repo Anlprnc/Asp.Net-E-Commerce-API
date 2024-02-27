@@ -7,6 +7,7 @@ using Asp.Net_E_Commerce.Core.OtherSubjects;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
+using Microsoft.EntityFrameworkCore;
 
 namespace Asp.Net_E_Commerce.Core.Services
 {
@@ -21,6 +22,35 @@ namespace Asp.Net_E_Commerce.Core.Services
             _userManager = userManager;
             _roleManager = roleManager;
             _configuration = configuration;
+        }
+
+        public async Task<AuthServiceResponseDto> DeleteUserByIdAsync(string userId)
+        {
+            var user = await _userManager.FindByIdAsync(userId);
+            if (user == null)
+            {
+                return new AuthServiceResponseDto
+                {
+                    IsSucceed = false,
+                    Message = "User not found"
+                };
+            }
+
+            var result = await _userManager.DeleteAsync(user);
+            if (!result.Succeeded)
+            {
+                return new AuthServiceResponseDto
+                {
+                    IsSucceed = false,
+                    Message = "Failed to delete user"
+                };
+            }
+
+            return new AuthServiceResponseDto
+            {
+                IsSucceed = true,
+                Message = "User deleted successfully"
+            };
         }
 
         public async Task<AuthServiceResponseDto> LoginAsync(LoginDto loginDto)
@@ -63,7 +93,6 @@ namespace Asp.Net_E_Commerce.Core.Services
                 IsSucceed = true,
                 Message = token
             };
-
         }
 
         public async Task<AuthServiceResponseDto> MakeAdminAsync(UpdatePermissionDto updatePermissionDto)
@@ -185,5 +214,10 @@ namespace Asp.Net_E_Commerce.Core.Services
             return token;
         }
 
+        async Task<List<ApplicationUser>> IAuthService.GetAllUsersAsync()
+        {
+            var users = await _userManager.Users.ToListAsync();
+            return users;
+        }
     }
 }

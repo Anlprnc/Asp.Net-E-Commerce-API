@@ -5,27 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e1e65685-67dc-4ddd-81c4-59bbc62d5762" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/892ed7b9-2857-4316-a9e4-89148a447983.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/892ed7b9-2857-4316-a9e4-89148a447983.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/892ed7b9-2857-4316-a9e4-89148a447983/storage_v2/_src_/database/ecommerceDb.3i4D9A/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/892ed7b9-2857-4316-a9e4-89148a447983/storage_v2/_src_/database/ecommerceDb.3i4D9A/schema/public.abK9xQ.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controllers/ProductController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/ProductController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controllers/AuthController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/AuthController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Core/DbContext/ApplicationDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Core/DbContext/ApplicationDbContext.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Entities/Category.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Entities/Category.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Entities/Product.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Entities/Product.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Interfaces/IProductService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Interfaces/IProductService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Services/ProductService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Services/ProductService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Migrations/20240226142514_init.Designer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Migrations/20240226142514_init.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Migrations/ApplicationDbContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Migrations/ApplicationDbContextModelSnapshot.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net8.0/Asp.Net-E-Commerce.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net8.0/Asp.Net-E-Commerce.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net8.0/Asp.Net-E-Commerce.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net8.0/Asp.Net-E-Commerce.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Dtos/RegisterDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Dtos/RegisterDto.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Interfaces/IAuthService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Interfaces/IAuthService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Services/AuthService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Services/AuthService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0/Asp.Net-E-Commerce.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net8.0/Asp.Net-E-Commerce.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0/Asp.Net-E-Commerce.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net8.0/Asp.Net-E-Commerce.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0/Asp.Net-E-Commerce.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net8.0/Asp.Net-E-Commerce.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0/Asp.Net-E-Commerce.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net8.0/Asp.Net-E-Commerce.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0/Asp.Net-E-Commerce.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net8.0/Asp.Net-E-Commerce.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0/ref/Asp.Net-E-Commerce.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net8.0/ref/Asp.Net-E-Commerce.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0/refint/Asp.Net-E-Commerce.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net8.0/refint/Asp.Net-E-Commerce.dll" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

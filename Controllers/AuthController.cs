@@ -1,8 +1,7 @@
 using Asp.Net_E_Commerce.Core.Dtos;
-using Asp.Net_E_Commerce.Core.Entities;
 using Asp.Net_E_Commerce.Core.Interfaces;
 using Asp.Net_E_Commerce.Core.OtherSubjects;
-using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Asp.Net_E_Commerce.Controllers
@@ -16,6 +15,28 @@ namespace Asp.Net_E_Commerce.Controllers
         public AuthController(IAuthService authService)
         {
             _authService = authService;
+        }
+
+        [HttpGet]
+        [Route("get-all-users")]
+        [Authorize(Roles = StaticUserRoles.OWNER)]
+        public async Task<IActionResult> GetAllUsers()
+        {
+            var users = await _authService.GetAllUsersAsync();
+            return Ok(users);
+        }
+
+        [HttpDelete]
+        [Route("users/{userId}")]
+        [Authorize(Roles = StaticUserRoles.OWNER)]
+        public async Task<IActionResult> DeleteUserById(string userId)
+        {
+            var deleteResult = await _authService.DeleteUserByIdAsync(userId);
+
+            if (deleteResult.IsSucceed)
+                return Ok(deleteResult);
+
+            return BadRequest(deleteResult);
         }
 
         [HttpPost]
