@@ -151,13 +151,6 @@ namespace Asp.Net_E_Commerce.Migrations
                     b.Property<bool>("IsActive")
                         .HasColumnType("boolean");
 
-                    b.Property<int>("Order")
-                        .HasColumnType("integer");
-
-                    b.Property<string>("Slug")
-                        .IsRequired()
-                        .HasColumnType("text");
-
                     b.HasKey("Id");
 
                     b.ToTable("Categories");
@@ -167,25 +160,19 @@ namespace Asp.Net_E_Commerce.Migrations
                         {
                             Id = 1,
                             CategoryName = "Electronics",
-                            IsActive = true,
-                            Order = 1,
-                            Slug = "electronics"
+                            IsActive = true
                         },
                         new
                         {
                             Id = 2,
                             CategoryName = "Clothing",
-                            IsActive = true,
-                            Order = 2,
-                            Slug = "clothing"
+                            IsActive = true
                         },
                         new
                         {
                             Id = 3,
                             CategoryName = "Books",
-                            IsActive = true,
-                            Order = 3,
-                            Slug = "books"
+                            IsActive = true
                         });
                 });
 
@@ -223,10 +210,6 @@ namespace Asp.Net_E_Commerce.Migrations
                         .HasColumnType("character varying(150)");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("BrandId");
-
-                    b.HasIndex("CategoryId");
 
                     b.ToTable("Products");
                 });
@@ -361,25 +344,6 @@ namespace Asp.Net_E_Commerce.Migrations
                     b.HasKey("UserId", "LoginProvider", "Name");
 
                     b.ToTable("AspNetUserTokens", (string)null);
-                });
-
-            modelBuilder.Entity("Asp.Net_E_Commerce.Core.Entities.Product", b =>
-                {
-                    b.HasOne("Asp.Net_E_Commerce.Core.Entities.Brand", "Brand")
-                        .WithMany()
-                        .HasForeignKey("BrandId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("Asp.Net_E_Commerce.Core.Entities.Category", "Category")
-                        .WithMany()
-                        .HasForeignKey("CategoryId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Brand");
-
-                    b.Navigation("Category");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>

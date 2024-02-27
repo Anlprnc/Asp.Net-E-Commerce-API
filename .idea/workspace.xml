@@ -4,7 +4,29 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e1e65685-67dc-4ddd-81c4-59bbc62d5762" name="Changes" comment="" />
+    <list default="true" id="e1e65685-67dc-4ddd-81c4-59bbc62d5762" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/892ed7b9-2857-4316-a9e4-89148a447983.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/892ed7b9-2857-4316-a9e4-89148a447983.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/892ed7b9-2857-4316-a9e4-89148a447983/storage_v2/_src_/database/ecommerceDb.3i4D9A/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/892ed7b9-2857-4316-a9e4-89148a447983/storage_v2/_src_/database/ecommerceDb.3i4D9A/schema/public.abK9xQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controllers/ProductController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/ProductController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/DbContext/ApplicationDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Core/DbContext/ApplicationDbContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Entities/Category.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Entities/Category.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Entities/Product.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Entities/Product.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Interfaces/IProductService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Interfaces/IProductService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Services/ProductService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Services/ProductService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Migrations/20240226142514_init.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Migrations/20240226142514_init.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Migrations/ApplicationDbContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Migrations/ApplicationDbContextModelSnapshot.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net8.0/Asp.Net-E-Commerce.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net8.0/Asp.Net-E-Commerce.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net8.0/Asp.Net-E-Commerce.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net8.0/Asp.Net-E-Commerce.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0/Asp.Net-E-Commerce.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net8.0/Asp.Net-E-Commerce.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0/Asp.Net-E-Commerce.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net8.0/Asp.Net-E-Commerce.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0/Asp.Net-E-Commerce.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net8.0/Asp.Net-E-Commerce.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0/Asp.Net-E-Commerce.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net8.0/Asp.Net-E-Commerce.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0/Asp.Net-E-Commerce.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net8.0/Asp.Net-E-Commerce.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0/ref/Asp.Net-E-Commerce.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net8.0/ref/Asp.Net-E-Commerce.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0/refint/Asp.Net-E-Commerce.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net8.0/refint/Asp.Net-E-Commerce.dll" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,28 +35,28 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 7
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="2cuK7hLyxybO3B9pvAJdFZvCjV5" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenDatabaseViewOnStart": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/anil"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenDatabaseViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/anil&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "postgresql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
 </project>

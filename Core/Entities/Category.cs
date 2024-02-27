@@ -8,10 +8,7 @@ namespace Asp.Net_E_Commerce.Core.Entities
 
         [Required]
         [StringLength(100)]
-        public string CategoryName { get; set; }
-
-        public string Slug { get; set; }
-        public int Order { get; set; }
+        public string? CategoryName { get; set; }
         public bool IsActive { get; set; }
     }
 }

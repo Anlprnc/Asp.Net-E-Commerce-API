@@ -24,13 +24,9 @@ namespace Asp.Net_E_Commerce.Core.Entities
         public bool IsActive { get; set; } = true;
 
         public int CategoryId { get; set; }
-
-        [ForeignKey("CategoryId")]
-        public virtual Category Category { get; set; }
+        // public Category Category { get; set; }
 
         public int BrandId { get; set; }
-
-        [ForeignKey("BrandId")]
-        public virtual Brand Brand { get; set; }
+        // public Brand Brand { get; set; }
     }
 }

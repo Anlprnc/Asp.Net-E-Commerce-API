@@ -25,9 +25,9 @@ namespace Asp.Net_E_Commerce.Core.DbContext
         private void SeedInitialData(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Category>().HasData(
-                new Category { Id = 1, CategoryName = "Electronics", Slug = "electronics", Order = 1, IsActive = true },
-                new Category { Id = 2, CategoryName = "Clothing", Slug = "clothing", Order = 2, IsActive = true },
-                new Category { Id = 3, CategoryName = "Books", Slug = "books", Order = 3, IsActive = true }
+                new Category { Id = 1, CategoryName = "Electronics", IsActive = true },
+                new Category { Id = 2, CategoryName = "Clothing", IsActive = true },
+                new Category { Id = 3, CategoryName = "Books", IsActive = true }
             );
 
             modelBuilder.Entity<Brand>().HasData(

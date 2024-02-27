@@ -1,5 +1,7 @@
 using Asp.Net_E_Commerce.Core.Entities;
 using Asp.Net_E_Commerce.Core.Interfaces;
+using Asp.Net_E_Commerce.Core.OtherSubjects;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Asp.Net_E_Commerce.Controllers
@@ -16,9 +18,9 @@ namespace Asp.Net_E_Commerce.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Product>>> GetAllProducts()
+        public async Task<ActionResult<IEnumerable<Product>>> GetAllProducts([FromQuery] bool sortByPrice = false, [FromQuery] bool ascending = true)
         {
-            var products = await _productService.GetAllProductsAsync();
+            var products = await _productService.GetAllProductsAsync(sortByPrice, ascending);
             return Ok(products);
         }
 
@@ -49,13 +51,33 @@ namespace Asp.Net_E_Commerce.Controllers
             return Ok(products);
         }
 
+        // [HttpGet("sorted")]
+        // public async Task<ActionResult<IEnumerable<Product>>> GetProductsSortedByPrice([FromQuery] bool ascending = true)
+        // {
+        //     var products = await _productService.GetProductsSortedAsync(ascending);
+        //     if (products == null)
+        //         return NotFound();
+        //     return Ok(products);
+        // }
+
+        // [HttpGet("filtered")]
+        // public async Task<ActionResult<IEnumerable<Product>>> GetProductsFilteredByPrice([FromQuery] decimal minPrice, [FromQuery] decimal maxPrice)
+        // {
+        //     var products = await _productService.GetProductsFilteredByPriceAsync(minPrice, maxPrice);
+        //     if (products == null)
+        //         return NotFound();
+        //     return Ok(products);
+        // }
+
         [HttpPost]
+        // [Authorize(Roles = $"{StaticUserRoles.ADMIN},{StaticUserRoles.OWNER}")]
         public async Task<ActionResult<Product>> CreateProduct([FromBody] Product product)
         {
             var createdProduct = await _productService.CreateProductAsync(product);
             return CreatedAtAction(nameof(GetProductById), new { id = createdProduct.Id }, createdProduct);
         }
 
+        [Authorize(Roles = $"{StaticUserRoles.ADMIN},{StaticUserRoles.OWNER}")]
         [HttpPut("{id:int}")]
         public async Task<ActionResult<Product>> UpdateProduct([FromRoute] int id, [FromBody] Product product)
         {
@@ -69,6 +91,7 @@ namespace Asp.Net_E_Commerce.Controllers
             return NoContent();
         }
 
+        [Authorize(Roles = $"{StaticUserRoles.ADMIN},{StaticUserRoles.OWNER}")]
         [HttpDelete("{id:int}")]
         public async Task<ActionResult> DeleteProduct([FromRoute] int id)
         {

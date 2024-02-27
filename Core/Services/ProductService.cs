@@ -1,7 +1,6 @@
 using Asp.Net_E_Commerce.Core.DbContext;
 using Asp.Net_E_Commerce.Core.Entities;
 using Asp.Net_E_Commerce.Core.Interfaces;
-using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.EntityFrameworkCore;
 
 namespace Asp.Net_E_Commerce.Core.Services
@@ -32,9 +31,19 @@ namespace Asp.Net_E_Commerce.Core.Services
             await _context.SaveChangesAsync();
         }
 
-        public async Task<IEnumerable<Product>> GetAllProductsAsync()
+        public async Task<IEnumerable<Product>> GetAllProductsAsync(bool sortByPrice = false, bool ascending = true)
         {
-            return await _context.Products.ToListAsync();
+            if (sortByPrice)
+            {
+                if (ascending)
+                    return await _context.Products.OrderBy(p => p.Price).ToListAsync();
+                else
+                    return await _context.Products.OrderByDescending(p => p.Price).ToListAsync();
+            }
+            else
+            {
+                return await _context.Products.ToListAsync();
+            }
         }
 
         public async Task<Product> GetProductByIdAsync(int id)
@@ -50,6 +59,19 @@ namespace Asp.Net_E_Commerce.Core.Services
         public async Task<IEnumerable<Product>> GetProductsByCategoryAsync(int categoryId)
         {
             return await _context.Products.Where(p => p.CategoryId == categoryId).ToListAsync();
+        }
+
+        public async Task<IEnumerable<Product>> GetProductsFilteredByPriceAsync(decimal minPrice, decimal maxPrice)
+        {
+            return await _context.Products.Where(p => p.Price >= minPrice && p.Price <= maxPrice).ToListAsync();
+        }
+
+        public async Task<IEnumerable<Product>> GetProductsSortedAsync(bool ascending = true)
+        {
+            if (ascending)
+                return await _context.Products.OrderBy(p => p.Price).ToListAsync();
+            else
+                return await _context.Products.OrderByDescending(p => p.Price).ToListAsync();
         }
 
         public async Task<Product> UpdateProductAsync(int id, Product product)
